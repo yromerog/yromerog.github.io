@@ -1,6 +1,0 @@
-# Portfolio Websites
-- Include Linked In
-- Instagram Link
-- GitHub Link
-- Add a Contact Form 
-
