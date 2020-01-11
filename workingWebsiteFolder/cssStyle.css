@@ -1,0 +1,240 @@
+/* controls inline elements*/
+li {
+    display: inline;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+/* #myName {
+            float: left;
+        }
+
+        #myNavBar {
+            float: right;
+
+        } */
+
+.container {
+    background-color: white;
+    border-bottom-style: solid;
+    border-radius: 2% 2%;
+    display: flex;
+    margin-bottom: 1%;
+    text-align: center;
+    width: 100%;
+}
+
+div.myName {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    color: black;
+    flex: 1;
+    padding: 1em;
+    text-align: center;
+    font-size: 24px;
+}
+
+div.myNavBar {
+    box-sizing: border-box;
+    width: 75%;
+    float: left;
+    flex: 1;
+    padding: 1em;
+
+}
+
+div.myNavBar {
+    overflow: hidden;
+    float: left;
+    display: block;
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+/* These Links Control the Color*/
+
+
+a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: color .4s ease-out;
+    transition: color .4s ease-out;
+}
+
+a::after {
+    border-radius: 1em;
+    border-top: .1em solid #2F56B0;
+    bottom: .14em;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 100%;
+    -webkit-transition: border-color .4s ease-out;
+    transition: border-color .4s ease-out;
+}
+
+a:hover {
+    color: dimgrey;
+
+    right: 0;
+    text-decoration: none;
+}
+
+a:hover::after {
+    -webkit-animation: anchor-underline 2s cubic-bezier(0, .5, 0, 1) infinite;
+    animation: anchor-underline 2s cubic-bezier(0, .5, 0, 1) infinite;
+    border-color: green;
+}
+
+@-webkit-keyframes anchor-underline {
+
+    0%,
+    10% {
+        left: 0;
+        right: 100%;
+    }
+
+    40%,
+    60% {
+        left: 0;
+        right: 0;
+    }
+
+    90%,
+    100% {
+        left: 100%;
+        right: 0;
+    }
+}
+
+@keyframes anchor-underline {
+
+    0%,
+    10% {
+        left: 0;
+        right: 100%;
+    }
+
+    40%,
+    60% {
+        left: 0;
+        right: 0;
+    }
+
+    90%,
+    100% {
+        left: 100%;
+        right: 0;
+    }
+}
+
+
+a.visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* background of music text background*/
+div.backgroundColor {
+    background-color: white;
+    opacity: .5;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+}
+
+/* inner column of text. Surronded by div.Background*/
+.column {
+    /*float: left;*/
+    align-content: center;
+    width: 30%;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, .6);
+    color: black;
+    margin: auto;
+    display: inline-block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    text-align: center;
+}
+
+.row {
+    text-align: center color: white;
+    width: 100%;
+    height: 100%;
+    background-image: url(/workingWebsiteFolder/backgroundFolder/IMG_0536.JPG);
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:300px) {
+    .column {
+        width: 100%;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+div.nextBox {
+
+    margin: 10% 10% 10% 10%;
+}
