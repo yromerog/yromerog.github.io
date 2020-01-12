@@ -236,10 +236,11 @@ h2 {
     margin: 10% 10% 10% 10%;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .openButton {
-        color: ;
+        color: black;
     }
+    
 
     /* The side navigation menu */
     .sidenav {
@@ -254,7 +255,7 @@ h2 {
         top: 0;
         /* Stay at the top */
         left: 0;
-        background-color: #111;
+        background-color: black;
         /* Black*/
         overflow-x: hidden;
         /* Disable horizontal scroll */
